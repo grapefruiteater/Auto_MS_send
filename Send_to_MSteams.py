@@ -31,12 +31,8 @@ except:
     pass
 userid = user_email.split('@')[0]
 
-#List
-#Address = ["ttoh","soyamashita","mkurokawa","mkurokawa","mkurokawa"]
-#DIDs = ["Y2BM","Z2BM","Z21C","Z22A","Y21G"]
-
-Address = ["ttoh","soyamashita","mkurokawa","mkurokawa","mkurokawa"]
-DIDs = ["Y2BM","Z2BM","Z21C","Z22A","Y21G"]
+Address = ["username"]
+DIDs = ["a"]
 
 #for Name in Address:
 for i,Name in enumerate(Address):
@@ -60,7 +56,7 @@ for i,Name in enumerate(Address):
     options.add_experimental_option('prefs',prefs)
 
     # ドライバのパス設定, chrome用jのwebdriverはあらかじめダウンロードが必要
-    driver_path = r'//na.micron.com/root/Common/MMJ/Secure/PIE/All-Write/YE/USERNAME/kmiyaoka/120s/Data/chromedriver/v92/chromedriver.exe'
+    driver_path = r'//chromedriver.exe'
 
     # ★で設定したオプションを適用してChromeを起動
     driver = webdriver.Chrome(executable_path = driver_path, chrome_options = options)
@@ -95,7 +91,7 @@ for i,Name in enumerate(Address):
     #　画面遷移を待機
     time.sleep(25)
 
-    YIP_file_path="//WINNTDOM/root/Common/MMJ/Secure/PIE/All-Write/YE/Report/HVM/Weekly_material/120s/YIP/Weekly_Dieloss_Pareto/YIP_up_csv/" + DIDs[i] + "_Latest_YIP_Upload.csv"
+    YIP_file_path="/Latest_YIP_Upload.csv"
 
     timediff = 0
     try:
