@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Mar  3 20:38:03 2021
-
-@author: yiwai
-"""
 
 from socket import AddressInfo
 from selenium import webdriver
